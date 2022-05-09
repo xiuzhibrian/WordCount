@@ -4,8 +4,7 @@
 void wcexe(char *filename);
 int main()
 {
-	char filename[1000]; 
-	scanf("%s",&filename); 
+	char filename[]="hhh.txt"; 
 	wcexe(filename);
 	return 0;
 	
@@ -24,7 +23,7 @@ void wcexe(char *filename)
 	
 	if((fp=fopen(filename,"rb"))==NULL)
 	{
-		printf("文件不能打开");
+		printf("鏂囦欢涓嶈兘鎵撳紑");
 		exit(0);
 	}
 	
@@ -59,8 +58,8 @@ void wcexe(char *filename)
 			wordCount++;
 		}
 		fclose(fp);
-		printf("单词数：%d\n",wordCount);
-		printf("字符数：%d\n",charCount);
+		printf("鍗曡瘝鏁帮細%d\n",wordCount);
+		printf("瀛楃鏁帮細%d\n",charCount);
 	}
 	
 	
